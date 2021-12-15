@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -74,10 +76,22 @@ a:hover {
   margin-left: 32px;
 } 
 
+.text {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #d883cf;
+  text-transform: uppercase;
+}
+
+#icon {
+  font-size: 40px;
+}
+
 .animais {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 4%;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -94,6 +108,39 @@ a:hover {
   transform: scale(1.1);
 }
 
+.benef{
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-items: center;
+  color: #d883cf;
+}
+
+.list {
+  color: #fff;
+  line-height: 40px;
+  margin: 30px;
+  margin-bottom: 80px;
+  font-size: 20px;
+  list-style: none;
+}
+
+#upercase {
+  color: #f7cdee;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+#upercase::after {
+  content: '';
+  width: 15rem;
+  height: 2px;
+  background: #8844ee;
+  display: block;
+  margin: 8px auto;
+}
+
 footer {
   width: 100%;
   height: 180px;
@@ -104,7 +151,7 @@ footer {
 }
 
 footer p {
-  margin: 3rem;
+  margin: 4rem;
   text-align: center;
   font-size: 18px;
   color: #e27bcf;
@@ -136,11 +183,15 @@ footer p {
     margin-bottom: 20px;
   }
 
+  .text {
+    margin-top: 30%;
+  }
+
   .animais {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 30%;
+    margin-top: 10%;
   }
   
   .animais img {
@@ -152,13 +203,31 @@ footer p {
 }
 
 @media screen and (max-width: 440px){
+
+  .text {
+    margin-top: 50%;
+  }
+
   .animais {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 40%;
+    margin-top: 10%;
   }
   
+  .benef{
+    font-size: 12px;
+  }
+
+  .list {
+    color: #fff;
+    text-align: start;
+    line-height: 30px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    list-style: circle;
+  }
+
   .animais img {
     margin: 15px;
     width: 320px;
@@ -181,13 +250,17 @@ footer p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 60%;
+    margin-top: 10%;
   }
 
   .animais img{
     margin: 15px;
     width: 200px;
     height: 250px;
+  }
+
+  #upercase::after {
+    display: none;
   }
 
   footer {
