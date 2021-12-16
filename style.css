@@ -54,6 +54,12 @@ a:hover {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   color: #fff;
   cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.p_custon:hover {
+  font-size: 27px;
+  color: #e27bcf;
 }
 
 .p_custon::after {
